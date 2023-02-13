@@ -1,0 +1,248 @@
+body {
+	background-color: lightgray;
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 100hv;
+	background-size: cover;
+}
+
+header {
+	width: 99.7%;
+	height: 100%;
+	background-size: cover;
+	margin: 22 px auto;
+	padding: 0.1%;
+	background-color: black;
+	background-position:40% 40% ;
+}
+
+.Topmain{
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	margin: 0 20px 0 0;
+}
+.log{
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+}
+
+
+.navigation{
+	list-style: none;
+	display: flex;
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+
+.navigation li a{
+	margin: 0 40px 0 0;
+}
+
+.emaillink{
+	color: royalblue;
+}
+
+.emaillink:hover{
+	color: blueviolet;
+}
+
+.emaillink: {
+	color: royalblue;
+}
+
+.HeaderTop{
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	margin: 0 10px 0 0;
+}
+
+.link{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    color: rgb(150, 49, 49);
+    font-size: 24px;
+
+}
+
+.link:hover{
+	color: white;
+
+}
+
+
+.link2{
+	color: white;
+	list-style: none;
+	text-decoration: none;
+	display: flex;
+}
+
+.link2:hover{
+	color: rgb(150, 49, 49);
+}
+
+
+
+.footer3{
+	display: flex;
+	list-style: none;
+}
+
+.footer3 li button {
+		margin: 0 20px 0 0;
+}
+
+
+
+#window {
+            width: 350px;
+            height: 534px;
+            margin: 120px auto;
+            background: rgba(140, 140, 140, .8);
+            border: none;
+            border-radius: 15px;
+            z-index: 150; display: none;
+           	position: fixed; left: 80% ;right: 0%;top: 0%;bottom: 0%;
+        } 
+
+
+#window2 {
+            width: 350px;
+            height: 340px;
+            margin: 120px auto;
+            background: rgba(140, 140, 140, .8);
+            border: none;
+            border-radius: 15px;
+            z-index: 150; display: none;
+           	position: fixed; left: 80% ;right: 0%;top: 0%;bottom: 0%;
+        } 
+
+.form{
+            width: 275px; margin: 0 auto 0 auto; text-align: center;} 
+
+.input{
+                width: 260px;padding: 5px; margin-bottom: 10px;
+} 
+#gray{
+	padding: 15px;
+}
+
+#gray:hover{
+	color: rgb(150, 49, 49);
+}
+
+
+.lolreg{
+	color: black;
+}
+
+.nase{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.input1{
+	border: 2px solid rgb(150, 49, 49);
+	border-radius: 5px;
+	padding: 6px 14px;
+}
+
+.nase li{
+	list-style: none;
+	text-decoration: none;
+	margin: 0 20px 0 0;
+
+}
+
+.nase button{
+  border: 0;
+  border-radius: 5px;
+  background: rgb(150, 49, 49);
+  color: white;
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+div.container3{
+	margin: 4%;
+	padding: 1% 1%;
+	width: 90%;
+	height: 700px;
+	background-color: white;
+}
+
+.cont2{
+	transform: translate(-5%);
+	overflow: hidden;
+}
+
+.chose{
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	transform: translate(32%, -80%);
+	font-size: 18px;
+	font-family: Arial;
+}
+
+.Mark{
+	font-weight: bolder;
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	transform: translate(26%, -70%);
+
+}
+
+
+.Price{
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	transform: translate(42%, -270%);
+}
+
+.kyzov{
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	transform: translate(36%, -200%);
+}
+
+.kyzov li {
+	margin: 0 5% 0 0;
+}
+
+.kyzov2{
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	transform: translate(36%, -180%);
+}
+
+.kyzov2 li {
+	margin: 0 2% 0 0;
+}
+
+.block{
+	display: flex;
+	list-style: none;
+	color: white;
+}
+.block li{
+	margin: 0 5% 0 0;
+}
+

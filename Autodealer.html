@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car-trade</title>
+	<link rel="stylesheet" type="text/css" href="auto.css">
+	<link rel="stylesheet" media="only screen and (max-width: 800px)" href="auto.css">
+	<link rel="shortcut icon" href="./img/Car-Trade.png" type="image/x-icon">
+	<script>
+	//Функция показа
+		function show(state)
+		{
+		document.getElementById('window').style.display = state;	
+		}	
+		function showEnt(state)
+		{
+		document.getElementById('window2').style.display = state;
+		}
+
+	</script>  
+</head>
+<body>
+	<header>
+		<div class = "Topmain">
+			<div>
+				<img src="./img/Car-Trade.png"></div>
+			<div class = "Main">
+				<ul class="navigation">
+					<li><a class="link2" href="#">Главная</a></li>
+					<li><a class="link2" href="#">Каталог</a></li>
+					<li><a class="link2" href="#">О Нас</a> </li>
+					<li><a class="link2" href="#">Контакты</a></li>
+					<li><a class="link2" href="#">Помощь</a></li>
+				</ul>
+			</div>
+			<div class="HeaderTop">
+				<ul class="footer3">
+					<li><button onclick="show('block')" class="link">Регистрация</button></li>
+					<li><button onclick="showEnt('block')" class="link">Войти</button></li>
+				</ul>
+			<div id="window">
+					<div class="form">
+				        <h2 class="lolreg">Регистрация</h2>
+				        <form action="Autodealer.html" name="f2">
+				        	<p>	
+				        		<label for="name"></label>            
+				        		<input type="text" placeholder="Имя" name="name1" class="input" required id="name">
+				        	</p>
+				        	<p>
+				        		<label for="surname"></label>
+				            	<input type="text" placeholder="Фамилия" name="name2" class="input" required id="surname">
+				            </p>
+				            <p>
+				            	<label for="ema"></label> 
+				           		<input type="email" placeholder="E-mail" name="email1" class="input" required id="ema">
+				           	</p>
+							<p>	
+				            	<input type="password" placeholder="Пароль" name="pass1" class="input"  title="Пароль должен содержать не менее 6 латинских букв не менее двух цифр">
+				            </p>
+				            <p>
+				            	<label for="pas2"></label>
+				            	<input type="password" placeholder="Подтвердите пароль" name="pass2" class="input" required id="pas2">
+				            </p>
+				            <p>
+				            	<label for="phone"></label>
+				            	<input type='tel' placeholder="Мобильный телефон" name="tel" class="input" required id="phone" pattern="+7/([0-9]{3})/-/[0-9]{3}/-/[0-9]{2}/-/[0-9]{2}/">
+				            </p>
+				            <p>
+				            	<button type="submit"  name="sab" class="input">Регистрация</button>
+				            </p>
+				            <p>
+				            	<button onclick="show('none')" id="gray">Закрыть</button> 
+				            </p>
+				        </form>
+				    	</div>
+			    	</div>
+			    	<div id = "window2">
+			    		<div class="form">
+			    			<h2 class="lolreg">Войти</h2>
+			    			<form action="Autodealer.html">
+			    			<p>
+				            	<label for="ema"></label>
+				           		<input type="email" placeholder="E-mail" name="email1" class="input" required id="ema">
+				           	</p>
+							<p>	
+								<label for="pas"></label>
+				            	<input type="password" placeholder="Пароль" name="pass1" class="input" required id="pas">
+				            </p>
+				            <p>
+				            	<button type="submit"  name="sab2" class="input">Войти</button> 
+				            </p>
+				            <p>
+				            	<button onclick="showEnt('none')" id="gray">Закрыть</button> 
+				            </p>
+			    			</form>
+			    		</div>			    		
+			    </div>
+			</div>
+		</div>
+	</header>
+		<content>
+			<div class="search">
+				<ul class="nase">
+					<li>
+				         <input type='text' placeholder="Поиск по сайту" name="tel" class="input1">
+					</li>
+					<li>
+						<button type="submit" id="poisk">Поиск</button>
+					</li>
+				</ul>
+			</div>
+			<div class="container3">
+				<img src="./img/Mainavto.jpg" width="50%" height="50%" alt="kia" style="float:left; margin-right:10px;">
+				<div class="cont2">
+				<div>
+					<p style="transform: translate(20%); font-size: 26px; font-family: Arial; text-decoration: underline;">Выбор автомобиля:</p>
+					<ul class="chose">
+						<li><input type="checkbox" name="checkbox1">новые</li>
+						<li><input type="checkbox" name="checkbox2">с пробегом</li>
+						<li><input type="checkbox" name="checkbox3">в наличии</li>
+					</ul>
+				</div>
+				<div>
+					<p style="transform: translate(20%, -90%); font-size: 18px; font-family: Arial; color: gray;">Марка</p>
+					<ul class="Mark">
+						<li><input type="checkbox" name="checkbox1">KIA</li>
+						<li><input type="checkbox" name="checkbox2">Audi</li>
+						<li><input type="checkbox" name="checkbox3">LEXUS</li>
+						<li><input type="checkbox" name="checkbox3">HONDA</li>
+					</ul>
+				</div>
+				<div>
+					<p style="transform: translate(20%, -90%); font-size: 18px; font-family: Arial; color: gray;">Цена</p>
+					<ul class="Price">
+						<li>От 150<input type="range" name="range1" min="150" max="900" value="350">До 999 тыс.</li>
+				</div>
+				<div>
+					<ul class="kyzov">
+						<li><input type="checkbox" name="checkbox1">Седан</li>
+						<li><input type="checkbox" name="checkbox2">Универсал</li>
+					</ul>
+					<ul class="kyzov2">
+						<li><input type="checkbox" name="checkbox3">Минивен</li>
+						<li><input type="checkbox" name="checkbox3">Внедорожник</li>
+					</ul>
+				</div>
+				</div>	
+				<div>
+				<ul class="block">                
+					<li class="kia"><a href="#"><img src="./img/kia.png" alt="kia" width="80%" height="90%"></a></li>                
+					<li class="nissan"><a href="#"><img  src="./img/nissan.png" alt="nissan" width="80%" height="90%"></a></li>
+					<li class="honda"><a href="#"><img  src="./img/honda.png" alt="honda" width="80%" height="90%"></a></li>                 
+				</ul>
+				</div>
+			</div>
+		</content>
+	</body>
+</html>
+
